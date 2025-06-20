@@ -15,16 +15,16 @@
  * @requires dotenv - Loads environment variables from a .env file.
  * @requires http - Node.js HTTP server module.
  * @requires socket.io - Library for real-time WebSocket communication.
- * @requires ./routes/user.route - User-related API routes.
- * @requires ./routes/device.route - Device-related API routes.
+ * @requires ./Routes/user.route - User-related API routes.
+ * @requires ./Routes/device.route - Device-related API routes.
  * @requires ./Controllers/floodsensor.controller - Controller for flood sensor data updates.
  * @requires ./Controllers/disasteralert.controller - Controller for disaster alert data fetching.
  */
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const userRoutes = require("./routes/user.route");
-const deviceRoutes = require("./routes/device.route");
+const userRoutes = require("./Routes/user.route");
+const deviceRoutes = require("./Routes/device.route");
 require("dotenv").config();
 const http = require("http");
 const { Server } = require("socket.io");
