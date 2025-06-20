@@ -18,8 +18,8 @@ const axios = require("axios");
 const ThingSpeakData = require("../Models/ThingSpeakData");
 const Device = require("../Models/device.model");
 const User = require("../Models/user.model");
-const { sendVerificationEmail } = require("../utils/email-alert");
-const { sendSms } = require("../utils/smsService");
+const { sendVerificationEmail } = require("../Utils/email-alert");
+const { sendSms } = require("../Utils/smsService");
 
 const API_KEY = "Z5OGMVIFH683U3V1";
 const BASE_URL = "https://api.thingspeak.com/channels";
